@@ -1,0 +1,226 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "baderna"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.751194,
+                    45.213348
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "filipini"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.676442,
+                    45.212489
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "flengi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.670276,
+                    45.164543
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "golas"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.773581,
+                    45.083114
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "kanfanar"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.846768,
+                    45.118054
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "kanfanar_tdr"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.836191,
+                    45.111261
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "pc_rov_valdalis"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.623983,
+                    45.102217
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "rov_crveni_otok"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.624466,
+                    45.059316
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "rov_mobilija"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.645421,
+                    45.075269
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "rov_moncenestre"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.648629,
+                    45.09542
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "rov_montelongo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.626795,
+                    45.110548
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "rov_monvi_acs"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.640865,
+                    45.068133
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "rov_mulin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.639148,
+                    45.074428
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "rov_valtida"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.685488,
+                    45.072074
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "rusnjak"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.774129,
+                    45.199432
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "sveti_martin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.740637,
+                    45.12507
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "zenodraga"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.722575,
+                    45.228078
+                ]
+            }
+        }
+    ]
+}
