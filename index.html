@@ -27,6 +27,7 @@
       }
     </style>
   </head>
+
   <body>
     <div id="map"></div>
     <script>
@@ -36,7 +37,7 @@
         container: "map", // container id
         style: "mapbox://styles/mapbox/dark-v10", // stylesheet location
         center: [16.463013, 44.516093], // starting position
-        zoom: 5 // starting zoom
+        zoom: 7 // starting zoom
       });
 
       var options = {
@@ -47,863 +48,2067 @@
         features: [
           {
             type: "Feature",
-            properties: { Site: "bacina", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.398808, 43.080167] }
+            properties: {
+              Site: "bacina",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.398808, 43.080167]
+            }
+          },
+          {
+            type: "Feature",
+            properties: {
+              Site: "baska_voda",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.950472, 43.354154]
+            }
+          },
+          {
+            type: "Feature",
+            properties: {
+              Site: "blace",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.483702, 43.00085]
+            }
+          },
+          {
+            type: "Feature",
+            properties: {
+              Site: "brela_soline",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.929501, 43.367778]
+            }
+          },
+          {
+            type: "Feature",
+            properties: {
+              Site: "eraci",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.490969, 43.104301]
+            }
+          },
+          {
+            type: "Feature",
+            properties: {
+              Site: "gradac",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.340106, 43.108136]
+            }
+          },
+          {
+            type: "Feature",
+            properties: {
+              Site: "kuna",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.342879, 42.964969]
+            }
+          },
+          {
+            type: "Feature",
+            properties: {
+              Site: "loviste",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.035959, 43.019282]
+            }
+          },
+          {
+            type: "Feature",
+            properties: {
+              Site: "ma_biokovka",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.007383, 43.303841]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "baska_voda", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [16.950472, 43.354154] }
+            properties: {
+              Site: "ma_konzum",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.032048, 43.285465]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "blace", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.483702, 43.00085] }
+            properties: {
+              Site: "ma_meteor",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.015058, 43.299268]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "brela_soline", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [16.929501, 43.367778] }
+            properties: {
+              Site: "ma_osejava",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.01932, 43.287707]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "eraci", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.490969, 43.104301] }
+            properties: {
+              Site: "ma_riva",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.017212, 43.295459]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "gradac", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.340106, 43.108136] }
+            properties: {
+              Site: "ma_vatrogasci",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.022201, 43.293201]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "kuna", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.342879, 42.964969] }
+            properties: {
+              Site: "mc_ma_romana",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.001658, 43.306668]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "loviste", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.035959, 43.019282] }
+            properties: {
+              Site: "metkovic",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.647489, 43.052993]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "ma_biokovka", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.007383, 43.303841] }
+            properties: {
+              Site: "metkovic_jz",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.602451, 43.023313]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "ma_konzum", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.032048, 43.285465] }
+            properties: {
+              Site: "metkovic_king",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.640644, 43.067122]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "ma_meteor", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.015058, 43.299268] }
+            properties: {
+              Site: "metkovic_silos",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.654219, 43.055924]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "ma_osejava", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.01932, 43.287707] }
+            properties: {
+              Site: "mokalo",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.232218, 42.978174]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "ma_riva", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.017212, 43.295459] }
+            properties: {
+              Site: "orebic",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.177134, 42.974005]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "ma_vatrogasci", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.022201, 43.293201] }
+            properties: {
+              Site: "pc_hotel_slavia",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.948884, 43.356945]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "mc_ma_romana", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.001658, 43.306668] }
+            properties: {
+              Site: "ploce_brdo",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.436655, 43.057223]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "metkovic", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.647489, 43.052993] }
+            properties: {
+              Site: "ploce_tkc",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.433738, 43.048967]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "metkovic_jz", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.602451, 43.023313] }
+            properties: {
+              Site: "podgora_stupica",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.096207, 43.239341]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "metkovic_king", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.640644, 43.067122] }
+            properties: {
+              Site: "podgradina",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.566071, 43.010012]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "metkovic_silos", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.654219, 43.055924] }
+            properties: {
+              Site: "rogotin",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.498156, 43.038783]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "mokalo", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.232218, 42.978174] }
+            properties: {
+              Site: "rota",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.361381, 42.963851]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "orebic", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.177134, 42.974005] }
+            properties: {
+              Site: "sucuraj",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.172278, 43.131674]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "pc_hotel_slavia", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [16.948884, 43.356945] }
+            properties: {
+              Site: "tilovica",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.872994, 43.412293]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "ploce_brdo", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.436655, 43.057223] }
+            properties: {
+              Site: "trpanj",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.269241, 43.009077]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "ploce_tkc", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.433738, 43.048967] }
+            properties: {
+              Site: "tucepi",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.053606, 43.271109]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "podgora_stupica", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.096207, 43.239341] }
+            properties: {
+              Site: "viganj",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.073475, 42.984978]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "podgradina", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.566071, 43.010012] }
+            properties: {
+              Site: "zaostrog",
+              Cluster: "32",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.27794, 43.139925]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "rogotin", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.498156, 43.038783] }
+            properties: {
+              Site: "bisevo",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.012929, 42.979738]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "rota", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.361381, 42.963851] }
+            properties: {
+              Site: "blato",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.785191, 42.932795]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "sucuraj", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.172278, 43.131674] }
+            properties: {
+              Site: "bogomolje",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.976636, 43.141604]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "tilovica", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [16.872994, 43.412293] }
+            properties: {
+              Site: "brguljac",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.21995, 43.031098]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "trpanj", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.269241, 43.009077] }
+            properties: {
+              Site: "brna",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.852028, 42.898271]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "tucepi", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.053606, 43.271109] }
+            properties: {
+              Site: "cara",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.92543, 42.931565]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "viganj", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.073475, 42.984978] }
+            properties: {
+              Site: "gdinj_rss",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.942918, 43.13192]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "zaostrog", Cluster: 32, "": "" },
-            geometry: { type: "Point", coordinates: [17.27794, 43.139925] }
+            properties: {
+              Site: "hum_vis",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.114411, 43.031168]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "bisevo", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.012929, 42.979738] }
+            properties: {
+              Site: "hvar_amfora",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.43389, 43.172409]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "blato", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.785191, 42.932795] }
+            properties: {
+              Site: "hvar_bodul",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.445668, 43.166004]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "bogomolje", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.976636, 43.141604] }
+            properties: {
+              Site: "hvar_oiv",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.422207, 43.181944]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "brguljac", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.21995, 43.031098] }
+            properties: {
+              Site: "hvar_podstine",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.423372, 43.180201]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "brna", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.852028, 42.898271] }
+            properties: {
+              Site: "hvar_poglavarst",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.438737, 43.171421]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "cara", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.92543, 42.931565] }
+            properties: {
+              Site: "hvar_tunel",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.545372, 43.156039]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "gdinj_rss", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.942918, 43.13192] }
+            properties: {
+              Site: "jelsa",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.701757, 43.162475]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "hum_vis", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.114411, 43.031168] }
+            properties: {
+              Site: "jelsa_ht",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.690305, 43.161925]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "hvar_amfora", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.43389, 43.172409] }
+            properties: {
+              Site: "jelsa_tele2",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.670727, 43.16819]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "hvar_bodul", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.445668, 43.166004] }
+            properties: {
+              Site: "kapja",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.88339, 42.948234]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "hvar_oiv", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.422207, 43.181944] }
+            properties: {
+              Site: "komiza",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.085958, 43.04807]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "hvar_podstine", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.423372, 43.180201] }
+            properties: {
+              Site: "korcula_hotel",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.145602, 42.950673]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "hvar_poglavarst", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.438737, 43.171421] }
+            properties: {
+              Site: "korcula_ht",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.136971, 42.948782]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "hvar_tunel", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.545372, 43.156039] }
+            properties: {
+              Site: "korcula_oiv",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.130714, 42.959206]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "jelsa", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.701757, 43.162475] }
+            properties: {
+              Site: "lumbarda",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.174695, 42.918672]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "jelsa_ht", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.690305, 43.161925] }
+            properties: {
+              Site: "napoleon",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.449402, 43.177731]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "jelsa_tele2", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.670727, 43.16819] }
+            properties: {
+              Site: "palmizana",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.39042, 43.159164]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "kapja", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.88339, 42.948234] }
+            properties: {
+              Site: "pupnat",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.042609, 42.945278]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "komiza", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.085958, 43.04807] }
+            properties: {
+              Site: "stari_grad_arka",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.58511, 43.188278]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "korcula_hotel", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [17.145602, 42.950673] }
+            properties: {
+              Site: "stari_grad_hvar",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.60053, 43.176262]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "korcula_ht", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [17.136971, 42.948782] }
+            properties: {
+              Site: "vela_luka",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.716236, 42.961244]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "korcula_oiv", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [17.130714, 42.959206] }
+            properties: {
+              Site: "vela_luka_hum",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.692112, 42.947281]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "lumbarda", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [17.174695, 42.918672] }
+            properties: {
+              Site: "velo_grabje",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.532235, 43.169584]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "napoleon", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.449402, 43.177731] }
+            properties: {
+              Site: "vis",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.186412, 43.059573]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "palmizana", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.39042, 43.159164] }
+            properties: {
+              Site: "vrboska",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.673597, 43.179185]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "pupnat", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [17.042609, 42.945278] }
+            properties: {
+              Site: "zavala",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.686743, 43.125412]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "stari_grad_arka", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.58511, 43.188278] }
+            properties: {
+              Site: "zrnovo",
+              Cluster: "33",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.109666, 42.95046]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "stari_grad_hvar", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.60053, 43.176262] }
+            properties: {
+              Site: "babino_polje",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.543117, 42.733779]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "vela_luka", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.716236, 42.961244] }
+            properties: {
+              Site: "cepikuce",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.836965, 42.849294]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "vela_luka_hum", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.692112, 42.947281] }
+            properties: {
+              Site: "du_grawe",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.088839, 42.652051]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "velo_grabje", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.532235, 43.169584] }
+            properties: {
+              Site: "du_hep",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.091598, 42.654335]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "vis", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.186412, 43.059573] }
+            properties: {
+              Site: "du_mokosica",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.10583, 42.679064]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "vrboska", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.673597, 43.179185] }
+            properties: {
+              Site: "du_trgovina",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.091534, 42.65106]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "zavala", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [16.686743, 43.125412] }
+            properties: {
+              Site: "du_tup",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.086597, 42.659232]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "zrnovo", Cluster: 33, "": "" },
-            geometry: { type: "Point", coordinates: [17.109666, 42.95046] }
+            properties: {
+              Site: "duba",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.645683, 42.872334]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "babino_polje", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [17.543117, 42.733779] }
+            properties: {
+              Site: "duboka",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.536873, 42.94496]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "cepikuce", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [17.836965, 42.849294] }
+            properties: {
+              Site: "govedjari",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.370557, 42.783153]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "du_grawe", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [18.088839, 42.652051] }
+            properties: {
+              Site: "gromaca",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.019444, 42.722344]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "du_hep", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [18.091598, 42.654335] }
+            properties: {
+              Site: "hum_lastovo",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.860408, 42.751418]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "du_mokosica", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [18.10583, 42.679064] }
+            properties: {
+              Site: "janjina",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.424497, 42.927748]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "du_trgovina", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [18.091534, 42.65106] }
+            properties: {
+              Site: "kolocep",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.005675, 42.679635]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "du_tup", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [18.086597, 42.659232] }
+            properties: {
+              Site: "komolac_hrt",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.139894, 42.670385]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "duba", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [17.645683, 42.872334] }
+            properties: {
+              Site: "lopud",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.944999, 42.693058]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "duboka", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [17.536873, 42.94496] }
+            properties: {
+              Site: "orasac",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.016398, 42.695771]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "govedjari", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [17.370557, 42.783153] }
+            properties: {
+              Site: "osojnik",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.07541, 42.708061]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "gromaca", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [18.019444, 42.722344] }
+            properties: {
+              Site: "pomena_mljet",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.342793, 42.788099]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "hum_lastovo", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [16.860408, 42.751418] }
+            properties: {
+              Site: "ponikve_hrt",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.616337, 42.849505]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "janjina", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [17.424497, 42.927748] }
+            properties: {
+              Site: "prapratno",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.677573, 42.818761]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "kolocep", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [18.005675, 42.679635] }
+            properties: {
+              Site: "prezba",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.817561, 42.767014]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "komolac_hrt", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [18.139894, 42.670385] }
+            properties: {
+              Site: "ropa",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.466704, 42.757401]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "lopud", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [17.944999, 42.693058] }
+            properties: {
+              Site: "rt_gruj",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.740136, 42.702063]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "orasac", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [18.016398, 42.695771] }
+            properties: {
+              Site: "sipan",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.856155, 42.740005]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "osojnik", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [18.07541, 42.708061] }
+            properties: {
+              Site: "slano",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.889434, 42.788337]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "pomena_mljet", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [17.342793, 42.788099] }
+            properties: {
+              Site: "slano_hrt",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.866738, 42.783579]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "ponikve_hrt", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [17.616337, 42.849505] }
+            properties: {
+              Site: "ston",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.698718, 42.837374]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "prapratno", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [17.677573, 42.818761] }
+            properties: {
+              Site: "sustjepan",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.09888, 42.670557]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "prezba", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [16.817561, 42.767014] }
+            properties: {
+              Site: "trstenik",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.399744, 42.919331]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "ropa", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [17.466704, 42.757401] }
+            properties: {
+              Site: "uljenje",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.478192, 42.894548]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "rt_gruj", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [17.740136, 42.702063] }
+            properties: {
+              Site: "velec_hrt",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.724442, 42.882439]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "sipan", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [17.856155, 42.740005] }
+            properties: {
+              Site: "zamaslina",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.728172, 42.833506]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "slano", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [17.889434, 42.788337] }
+            properties: {
+              Site: "zaton_du",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.041642, 42.69467]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "slano_hrt", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [17.866738, 42.783579] }
+            properties: {
+              Site: "zuljana",
+              Cluster: "34",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [17.458237, 42.886265]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "ston", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [17.698718, 42.837374] }
+            properties: {
+              Site: "cavtat_cro",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.214226, 42.578463]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "sustjepan", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [18.09888, 42.670557] }
+            properties: {
+              Site: "cibaca",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.162287, 42.634516]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "trstenik", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [17.399744, 42.919331] }
+            properties: {
+              Site: "cilipi",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.264399, 42.559839]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "uljenje", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [17.478192, 42.894548] }
+            properties: {
+              Site: "debeli_brijeg",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.432773, 42.490784]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "velec_hrt", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [17.724442, 42.882439] }
+            properties: {
+              Site: "du_babin_kuk",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.061279, 42.661235]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "zamaslina", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [17.728172, 42.833506] }
+            properties: {
+              Site: "du_belvedere",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.132245, 42.633227]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "zaton_du", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [18.041642, 42.69467] }
+            properties: {
+              Site: "du_bolnica",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.076118, 42.648298]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "zuljana", Cluster: 34, "": "" },
-            geometry: { type: "Point", coordinates: [17.458237, 42.886265] }
+            properties: {
+              Site: "du_excelsior",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.118754, 42.64113]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "cavtat_cro", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.214226, 42.578463] }
+            properties: {
+              Site: "du_hot_libertas",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.090894, 42.645289]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "cibaca", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.162287, 42.634516] }
+            properties: {
+              Site: "du_lokrum",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.120579, 42.628865]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "cilipi", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.264399, 42.559839] }
+            properties: {
+              Site: "du_palace",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.061274, 42.651208]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "debeli_brijeg", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.432773, 42.490784] }
+            properties: {
+              Site: "du_petka",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.072346, 42.649957]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "du_babin_kuk", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.061279, 42.661235] }
+            properties: {
+              Site: "du_srdj",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.109649, 42.650965]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "du_belvedere", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.132245, 42.633227] }
+            properties: {
+              Site: "du_srdj_zaledje",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.102194, 42.645712]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "du_bolnica", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.076118, 42.648298] }
+            properties: {
+              Site: "du_tkc",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.075314, 42.656241]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "du_excelsior", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.118754, 42.64113] }
+            properties: {
+              Site: "du_uv_sumratin",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.158416, 42.645713]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "du_hot_libertas", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.090894, 42.645289] }
+            properties: {
+              Site: "gornji_brgat",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.367272, 42.518772]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "du_lokrum", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.120579, 42.628865] }
+            properties: {
+              Site: "gruda",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.385486, 42.499151]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "du_palace", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.061274, 42.651208] }
+            properties: {
+              Site: "ilijino_brdo",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.295254, 42.532319]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "du_petka", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.072346, 42.649957] }
+            properties: {
+              Site: "komaji",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.191283, 42.621991]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "du_srdj", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.109649, 42.650965] }
+            properties: {
+              Site: "kupari",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.107913, 42.642551]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "du_srdj_zaledje", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.102194, 42.645712] }
+            properties: {
+              Site: "mc_du_minceta",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.11096, 42.641297]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "du_tkc", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.075314, 42.656241] }
+            properties: {
+              Site: "mc_du_stradun",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.206795, 42.622367]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "du_uv_sumratin", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.158416, 42.645713] }
+            properties: {
+              Site: "mc_hotel_mlini",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.071102, 42.654167]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "gornji_brgat", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.367272, 42.518772] }
+            properties: {
+              Site: "pc_cavtat_cro",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.105253, 42.642758]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "gruda", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.385486, 42.499151] }
+            properties: {
+              Site: "pc_du_dvori_lap",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.195723, 42.623721]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "ilijino_brdo", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.295254, 42.532319] }
+            properties: {
+              Site: "pc_du_hilton",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.262779, 42.560282]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "komaji", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.191283, 42.621991] }
+            properties: {
+              Site: "pc_sheraton_sre",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.417814, 42.492816]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "kupari", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.107913, 42.642551] }
+            properties: {
+              Site: "pc_zra_luka_du",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.228759, 42.593365]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "mc_du_minceta", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.11096, 42.641297] }
+            properties: {
+              Site: "plocice_oiv",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.531119, 42.392825]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "mc_du_stradun", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.206795, 42.622367] }
+            properties: {
+              Site: "prahivac",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.316727, 42.599184]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "mc_hotel_mlini", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.071102, 42.654167] }
+            properties: {
+              Site: "prevlaka",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.478752, 42.44238]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "pc_cavtat_cro", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.105253, 42.642758] }
+            properties: {
+              Site: "stravca",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [18.302497, 42.577101]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "pc_du_dvori_lap", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.195723, 42.623721] }
+            properties: {
+              Site: "vitaljina",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.648453, 43.264915]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "pc_du_hilton", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.262779, 42.560282] }
+            properties: {
+              Site: "vojski_do",
+              Cluster: "35",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.655971, 43.261907]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "pc_sheraton_sre", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.417814, 42.492816] }
+            properties: {
+              Site: "bol_gosp_centar",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.562307, 43.341379]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "pc_zra_luka_du", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.228759, 42.593365] }
+            properties: {
+              Site: "bol_ht",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.724589, 43.301525]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "plocice_oiv", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.531119, 42.392825] }
+            properties: {
+              Site: "donji_humac",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.540697, 43.490651]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "prahivac", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.316727, 42.599184] }
+            properties: {
+              Site: "gornji_humac",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.538165, 43.492207]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "prevlaka", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.478752, 42.44238] }
+            properties: {
+              Site: "grljevac",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.516513, 43.512944]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "stravca", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [18.302497, 42.577101] }
+            properties: {
+              Site: "hotel_lav_krov",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.448043, 43.323398]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "vitaljina", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [16.648453, 43.264915] }
+            properties: {
+              Site: "kamen",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.58197, 43.466353]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "vojski_do", Cluster: 35, "": "" },
-            geometry: { type: "Point", coordinates: [16.655971, 43.261907] }
+            properties: {
+              Site: "milna",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.692152, 43.444269]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "bol_gosp_centar", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.562307, 43.341379] }
+            properties: {
+              Site: "mutogras",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.502395, 43.51368]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "bol_ht", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.724589, 43.301525] }
+            properties: {
+              Site: "omis",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.448633, 43.539397]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "donji_humac", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.540697, 43.490651] }
+            properties: {
+              Site: "pc_st_city_co",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.552025, 43.493684]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "gornji_humac", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.538165, 43.492207] }
+            properties: {
+              Site: "pc_st_emmezeta",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.63592, 43.372007]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "grljevac", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.516513, 43.512944] }
+            properties: {
+              Site: "podstrana",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.75097, 43.356106]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "hotel_lav_krov", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.448043, 43.323398] }
+            properties: {
+              Site: "postire",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.737575, 43.345401]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "kamen", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.58197, 43.466353] }
+            properties: {
+              Site: "pucisce",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.489385, 43.536191]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "milna", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.692152, 43.444269] }
+            properties: {
+              Site: "pucisce_jadran",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.495472, 43.536201]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "mutogras", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.502395, 43.51368] }
+            properties: {
+              Site: "solin",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.505682, 43.529415]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "omis", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.448633, 43.539397] }
+            properties: {
+              Site: "solin_cola",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.612135, 43.377331]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "pc_st_city_co", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.552025, 43.493684] }
+            properties: {
+              Site: "splitska",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.495369, 43.529083]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "pc_st_emmezeta", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.63592, 43.372007] }
+            properties: {
+              Site: "st_city_co",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.439671, 43.539754]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "podstrana", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.75097, 43.356106] }
+            properties: {
+              Site: "st_dracevac",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.511917, 43.533356]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "postire", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.737575, 43.345401] }
+            properties: {
+              Site: "st_meterize",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.511435, 43.50275]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "pucisce", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.489385, 43.536191] }
+            properties: {
+              Site: "st_sv_juraj",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.861026, 43.282832]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "pucisce_jadran", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.495472, 43.536201] }
+            properties: {
+              Site: "st_tunel_mravin",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.558475, 43.373809]
+            }
           },
           {
             type: "Feature",
-            properties: { Site: "solin", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.505682, 43.529415] }
-          },
-          {
-            type: "Feature",
-            properties: { Site: "solin_cola", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.612135, 43.377331] }
-          },
-          {
-            type: "Feature",
-            properties: { Site: "splitska", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.495369, 43.529083] }
-          },
-          {
-            type: "Feature",
-            properties: { Site: "st_city_co", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.439671, 43.539754] }
-          },
-          {
-            type: "Feature",
-            properties: { Site: "st_dracevac", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.511917, 43.533356] }
-          },
-          {
-            type: "Feature",
-            properties: { Site: "st_meterize", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.511435, 43.50275] }
-          },
-          {
-            type: "Feature",
-            properties: { Site: "st_sv_juraj", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.861026, 43.282832] }
-          },
-          {
-            type: "Feature",
-            properties: { Site: "st_tunel_mravin", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.558475, 43.373809] }
-          },
-          {
-            type: "Feature",
-            properties: { Site: "stobrec", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.551081, 43.384351] }
-          },
-          {
-            type: "Feature",
-            properties: { Site: "sumartin", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.475828, 43.384169] }
-          },
-          {
-            type: "Feature",
-            properties: { Site: "supetar", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.52524, 43.560163] }
-          },
-          {
-            type: "Feature",
-            properties: { Site: "supetar_ht", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.534353, 43.552057] }
-          },
-          {
-            type: "Feature",
-            properties: { Site: "sutivan", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.620023, 43.279705] }
-          },
-          {
-            type: "Feature",
-            properties: { Site: "tunel_klis_kosa", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.653744, 43.454804] }
-          },
-          {
-            type: "Feature",
-            properties: { Site: "utvrda_klis", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.715416, 43.456066] }
-          },
-          {
-            type: "Feature",
-            properties: { Site: "vidova_gora", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.848565, 43.316412] }
-          },
-          {
-            type: "Feature",
-            properties: { Site: "zahod", Cluster: "31N", "": "" },
-            geometry: { type: "Point", coordinates: [16.552992, 43.521409] }
+            properties: {
+              Site: "stobrec",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.551081, 43.384351]
+            }
+          },
+          {
+            type: "Feature",
+            properties: {
+              Site: "sumartin",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.475828, 43.384169]
+            }
+          },
+          {
+            type: "Feature",
+            properties: {
+              Site: "supetar",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.52524, 43.560163]
+            }
+          },
+          {
+            type: "Feature",
+            properties: {
+              Site: "supetar_ht",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.534353, 43.552057]
+            }
+          },
+          {
+            type: "Feature",
+            properties: {
+              Site: "sutivan",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.620023, 43.279705]
+            }
+          },
+          {
+            type: "Feature",
+            properties: {
+              Site: "tunel_klis_kosa",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.653744, 43.454804]
+            }
+          },
+          {
+            type: "Feature",
+            properties: {
+              Site: "utvrda_klis",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.715416, 43.456066]
+            }
+          },
+          {
+            type: "Feature",
+            properties: {
+              Site: "vidova_gora",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.848565, 43.316412]
+            }
+          },
+          {
+            type: "Feature",
+            properties: {
+              Site: "zahod",
+              Cluster: "31N",
+              "": ""
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [16.552992, 43.521409]
+            }
           }
         ]
       };
@@ -920,7 +2125,7 @@
           },
           layout: {},
           paint: {
-            "fill-color": "#ED008C",
+            "fill-color": "#999B9E",
             "fill-opacity": 0.3,
             "fill-outline-color": "#999B9E"
           }
@@ -928,16 +2133,29 @@
 
         map.addLayer({
           id: "sites",
-          type: "symbol",
+          type: "circle",
           source: {
             type: "geojson",
             data: points
           },
-          layout: {
-            "icon-image": "marker-11",
-            "icon-allow-overlap": true
-          },
-          paint: {}
+          layout: {},
+          paint: {
+            "circle-radius": 3,
+            "circle-color": [
+              "case",
+              ["==", ["get", "Cluster"], "31N"],
+              "#00ffff",
+              ["==", ["get", "Cluster"], "32"],
+              "#ff00ff",
+              ["==", ["get", "Cluster"], "33"],
+              "#0000ff",
+              ["==", ["get", "Cluster"], "34"],
+              "#ffff00",
+              ["==", ["get", "Cluster"], "35"],
+              "#00ff00",
+              "#ea0a8e"
+            ]
+          }
         });
       });
     </script>
