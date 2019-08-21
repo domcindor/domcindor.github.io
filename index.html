@@ -2113,11 +2113,17 @@
         ]
       };
 
-      var voronoiPolygons = turf.voronoi(points, options);
+      var voronoiPolygons = turf.voronoi(points);
+
+      for (i = 0; i < voronoiPolygons["features"].length; i++) {
+        voronoiPolygons["features"][i].properties = {
+          id: points["features"][i]["properties"]["Cluster"]
+        };
+      }
 
       map.on("load", function() {
         map.addLayer({
-          id: "voronoi",
+          id: "blab",
           type: "fill",
           source: {
             type: "geojson",
@@ -2125,9 +2131,22 @@
           },
           layout: {},
           paint: {
-            "fill-color": "#999B9E",
             "fill-opacity": 0.3,
-            "fill-outline-color": "#999B9E"
+            "fill-outline-color": "#999B9E",
+            "fill-color": [
+              "case",
+              ["==", ["get", "id"], "31N"],
+              "#00ffff",
+              ["==", ["get", "id"], "32"],
+              "#ff00ff",
+              ["==", ["get", "id"], "33"],
+              "#0000ff",
+              ["==", ["get", "id"], "34"],
+              "#ffff00",
+              ["==", ["get", "id"], "35"],
+              "#00ff00",
+              "#ea0a8e"
+            ]
           }
         });
 
