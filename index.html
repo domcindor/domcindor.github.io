@@ -33,6 +33,7 @@
     <script>
       mapboxgl.accessToken =
         "pk.eyJ1IjoiZG9tY2luZG9yIiwiYSI6ImNqemppMjBuOTA5ZXEzYnJ0MDAyb3NxZnMifQ.TBesYQPZPQv94LtuXZyNTA";
+
       var map = new mapboxgl.Map({
         container: "map", // container id
         style: "mapbox://styles/mapbox/dark-v10", // stylesheet location
@@ -43,6 +44,7 @@
       var options = {
         bbox: [13.480225, 42.392169, 19.465027, 46.562637]
       };
+
       var points = {
         type: "FeatureCollection",
         features: [
@@ -2174,6 +2176,32 @@
               "#00ff00",
               "#ea0a8e"
             ]
+          }
+        });
+
+        map.addLayer({
+          id: "states-layer-outline",
+          type: "line",
+          source: {
+            type: "geojson",
+            data: voronoiPolygons
+          },
+          paint: {
+            "line-color": [
+              "case",
+              ["==", ["get", "id"], "31N"],
+              "#00ffff",
+              ["==", ["get", "id"], "32"],
+              "#ff00ff",
+              ["==", ["get", "id"], "33"],
+              "#0000ff",
+              ["==", ["get", "id"], "34"],
+              "#ffff00",
+              ["==", ["get", "id"], "35"],
+              "#00ff00",
+              "#ea0a8e"
+            ],
+            "line-width": 1
           }
         });
       });
