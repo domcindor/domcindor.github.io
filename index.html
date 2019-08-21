@@ -2113,7 +2113,7 @@
         ]
       };
 
-      var voronoiPolygons = turf.voronoi(points);
+      var voronoiPolygons = turf.voronoi(points, options);
 
       for (i = 0; i < voronoiPolygons["features"].length; i++) {
         voronoiPolygons["features"][i].properties = {
