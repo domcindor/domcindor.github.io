@@ -31,20 +31,19 @@
   <body>
     <div id="map"></div>
     <script>
+      // Ovdje stoji mapBox API key
       mapboxgl.accessToken =
         "pk.eyJ1IjoiZG9tY2luZG9yIiwiYSI6ImNqemppMjBuOTA5ZXEzYnJ0MDAyb3NxZnMifQ.TBesYQPZPQv94LtuXZyNTA";
 
+      // Stvara mapBox basic kartu
       var map = new mapboxgl.Map({
         container: "map", // container id
         style: "mapbox://styles/mapbox/dark-v10", // stylesheet location
         center: [16.463013, 44.516093], // starting position
-        zoom: 7 // starting zoom
+        zoom: 5 // starting zoom
       });
 
-      var options = {
-        bbox: [13.480225, 42.392169, 19.465027, 46.562637]
-      };
-
+      // Pretvara pointove[geoJson format] u polygone[novi geoJson format] i taj novi geoJson format vise nema features-e iz pointsa
       var points = {
         type: "FeatureCollection",
         features: [
@@ -9805,17 +9804,21 @@
           }
         ]
       };
+      var options = {
+        bbox: [13.480225, 42.392169, 19.465027, 46.562637]
+      };
       var voronoiPolygons = turf.voronoi(points, options);
 
-      var polygon = turf.polygon([
-        [[112, -21], [116, -36], [146, -39], [153, -24], [133, -10], [112, -21]]
-      ]);
+      // Maska pretvara bBox[kockasti polygon] u polygon po zelju[granice drzave]
       var mask = turf.polygon([
         [[90, -55], [170, -55], [170, 10], [90, 10], [90, -55]]
       ]);
-
+      var polygon = turf.polygon([
+        [[112, -21], [116, -36], [146, -39], [153, -24], [133, -10], [112, -21]]
+      ]);
       var masked = turf.mask(mask, polygon);
 
+      // Posto je voronoi izgubio featurese stare, treba dodjeliti Clustere nazad u polygone kako bi se mogli kasnije obojati
       for (i = 0; i < voronoiPolygons["features"].length; i++) {
         voronoiPolygons["features"][i].properties = {
           id: points["features"][i]["properties"]["Cluster"]
@@ -9823,8 +9826,9 @@
       }
 
       map.on("load", function() {
+        // Dodaje layer voronoi polygona.
         map.addLayer({
-          id: "blab",
+          id: "voronoiLayer",
           type: "fill",
           source: {
             type: "geojson",
@@ -9833,26 +9837,123 @@
           layout: {},
           paint: {
             "fill-opacity": 0.3,
-            "fill-outline-color": "#999B9E",
+            // Bojanje cluster-a po unique boji, uzima ID iz voronoiPolygons koji je dodan prije
             "fill-color": [
               "case",
+              ["==", ["get", "id"], 1],
+              "#a9002a",
+              ["==", ["get", "id"], 2],
+              "#60df76",
+              ["==", ["get", "id"], 3],
+              "#b50ea0",
+              ["==", ["get", "id"], 4],
+              "#259e0d",
+              ["==", ["get", "id"], 5],
+              "#d35fe4",
+              ["==", ["get", "id"], 6],
+              "#7ebb0f",
+              ["==", ["get", "id"], 7],
+              "#3742c0",
+              ["==", ["get", "id"], 8],
+              "#b9ce1c",
+              ["==", ["get", "id"], 9],
+              "#8a72fe",
+              ["==", ["get", "id"], 10],
+              "#1c7300",
+              ["==", ["get", "id"], 11],
+              "#f761df",
+              ["==", ["get", "id"], 12],
+              "#205f15",
+              ["==", ["get", "id"], 13],
+              "#c685ff",
+              ["==", ["get", "id"], 14],
+              "#828400",
+              ["==", ["get", "id"], 15],
+              "#0178f2",
+              ["==", ["get", "id"], 16],
+              "#f8761e",
+              ["==", ["get", "id"], 17],
+              "#02a7fd",
+              ["==", ["get", "id"], 18],
+              "#c69000",
+              ["==", ["get", "id"], 19],
+              "#72349e",
+              ["==", ["get", "id"], 20],
+              "#b7d165",
+              ["==", ["get", "id"], 21],
+              "#294ea3",
+              ["==", ["get", "id"], 22],
+              "#ff9d4f",
+              ["==", ["get", "id"], 23],
+              "#007dce",
+              ["==", ["get", "id"], 24],
+              "#e93139",
+              ["==", ["get", "id"], 25],
+              "#7bda97",
+              ["==", ["get", "id"], 26],
+              "#e00072",
+              ["==", ["get", "id"], 27],
+              "#019b85",
+              ["==", ["get", "id"], 28],
+              "#ff94fd",
+              ["==", ["get", "id"], 29],
+              "#617100",
+              ["==", ["get", "id"], 30],
+              "#d0a4ff",
               ["==", ["get", "id"], 31],
-              "#00ffff",
+              "#b16900",
               ["==", ["get", "id"], 32],
-              "#ff00ff",
+              "#9bb2ff",
               ["==", ["get", "id"], 33],
-              "#0000ff",
+              "#aa4c00",
               ["==", ["get", "id"], 34],
-              "#ffff00",
+              "#0072a3",
               ["==", ["get", "id"], 35],
-              "#00ff00",
-              "#ea0a8e"
+              "#ff8465",
+              ["==", ["get", "id"], 36],
+              "#019ca1",
+              ["==", ["get", "id"], 37],
+              "#ff6bad",
+              ["==", ["get", "id"], 38],
+              "#abd28b",
+              ["==", ["get", "id"], 39],
+              "#6e3e8b",
+              ["==", ["get", "id"], 40],
+              "#e7c16b",
+              ["==", ["get", "id"], 41],
+              "#5d497e",
+              ["==", ["get", "id"], 42],
+              "#dbc489",
+              ["==", ["get", "id"], 43],
+              "#9e1753",
+              ["==", ["get", "id"], 44],
+              "#8ca26d",
+              ["==", ["get", "id"], 45],
+              "#ff8edd",
+              ["==", ["get", "id"], 46],
+              "#5e5700",
+              ["==", ["get", "id"], 47],
+              "#e9b6e4",
+              ["==", ["get", "id"], 48],
+              "#704b15",
+              ["==", ["get", "id"], 49],
+              "#ff7da2",
+              ["==", ["get", "id"], 50],
+              "#a68959",
+              ["==", ["get", "id"], 51],
+              "#936995",
+              ["==", ["get", "id"], 52],
+              "#ffa477",
+              ["==", ["get", "id"], 53],
+              "#853d37",
+              "#873d19"
             ]
           }
         });
 
+        // Layer koji dodaje tocke svakog site-a
         map.addLayer({
-          id: "sites",
+          id: "sitesLayer",
           type: "circle",
           source: {
             type: "geojson",
@@ -9861,25 +9962,123 @@
           layout: {},
           paint: {
             "circle-radius": 2,
+            // Takoder boja unique cluster ali uzima featurese iz points-a, a ne iz voroniPolygona.
             "circle-color": [
               "case",
+              ["==", ["get", "Cluster"], 1],
+              "#a9002a",
+              ["==", ["get", "Cluster"], 2],
+              "#60df76",
+              ["==", ["get", "Cluster"], 3],
+              "#b50ea0",
+              ["==", ["get", "Cluster"], 4],
+              "#259e0d",
+              ["==", ["get", "Cluster"], 5],
+              "#d35fe4",
+              ["==", ["get", "Cluster"], 6],
+              "#7ebb0f",
+              ["==", ["get", "Cluster"], 7],
+              "#3742c0",
+              ["==", ["get", "Cluster"], 8],
+              "#b9ce1c",
+              ["==", ["get", "Cluster"], 9],
+              "#8a72fe",
+              ["==", ["get", "Cluster"], 10],
+              "#1c7300",
+              ["==", ["get", "Cluster"], 11],
+              "#f761df",
+              ["==", ["get", "Cluster"], 12],
+              "#205f15",
+              ["==", ["get", "Cluster"], 13],
+              "#c685ff",
+              ["==", ["get", "Cluster"], 14],
+              "#828400",
+              ["==", ["get", "Cluster"], 15],
+              "#0178f2",
+              ["==", ["get", "Cluster"], 16],
+              "#f8761e",
+              ["==", ["get", "Cluster"], 17],
+              "#02a7fd",
+              ["==", ["get", "Cluster"], 18],
+              "#c69000",
+              ["==", ["get", "Cluster"], 19],
+              "#72349e",
+              ["==", ["get", "Cluster"], 20],
+              "#b7d165",
+              ["==", ["get", "Cluster"], 21],
+              "#294ea3",
+              ["==", ["get", "Cluster"], 22],
+              "#ff9d4f",
+              ["==", ["get", "Cluster"], 23],
+              "#007dce",
+              ["==", ["get", "Cluster"], 24],
+              "#e93139",
+              ["==", ["get", "Cluster"], 25],
+              "#7bda97",
+              ["==", ["get", "Cluster"], 26],
+              "#e00072",
+              ["==", ["get", "Cluster"], 27],
+              "#019b85",
+              ["==", ["get", "Cluster"], 28],
+              "#ff94fd",
+              ["==", ["get", "Cluster"], 29],
+              "#617100",
+              ["==", ["get", "Cluster"], 30],
+              "#d0a4ff",
               ["==", ["get", "Cluster"], 31],
-              "#00ffff",
+              "#b16900",
               ["==", ["get", "Cluster"], 32],
-              "#ff00ff",
+              "#9bb2ff",
               ["==", ["get", "Cluster"], 33],
-              "#0000ff",
+              "#aa4c00",
               ["==", ["get", "Cluster"], 34],
-              "#ffff00",
+              "#0072a3",
               ["==", ["get", "Cluster"], 35],
-              "#00ff00",
-              "#ea0a8e"
+              "#ff8465",
+              ["==", ["get", "Cluster"], 36],
+              "#019ca1",
+              ["==", ["get", "Cluster"], 37],
+              "#ff6bad",
+              ["==", ["get", "Cluster"], 38],
+              "#abd28b",
+              ["==", ["get", "Cluster"], 39],
+              "#6e3e8b",
+              ["==", ["get", "Cluster"], 40],
+              "#e7c16b",
+              ["==", ["get", "Cluster"], 41],
+              "#5d497e",
+              ["==", ["get", "Cluster"], 42],
+              "#dbc489",
+              ["==", ["get", "Cluster"], 43],
+              "#9e1753",
+              ["==", ["get", "Cluster"], 44],
+              "#8ca26d",
+              ["==", ["get", "Cluster"], 45],
+              "#ff8edd",
+              ["==", ["get", "Cluster"], 46],
+              "#5e5700",
+              ["==", ["get", "Cluster"], 47],
+              "#e9b6e4",
+              ["==", ["get", "Cluster"], 48],
+              "#704b15",
+              ["==", ["get", "Cluster"], 49],
+              "#ff7da2",
+              ["==", ["get", "Cluster"], 50],
+              "#a68959",
+              ["==", ["get", "Cluster"], 51],
+              "#936995",
+              ["==", ["get", "Cluster"], 52],
+              "#ffa477",
+              ["==", ["get", "Cluster"], 53],
+              "#853d37",
+              "#873d19"
             ]
           }
         });
 
+        // Dodaje outline na voronoiPolygon jer se izgubi outline kada se smanji opacity
         map.addLayer({
-          id: "states-layer-outline",
+          id: "voronoiOutlineLayer",
           type: "line",
           source: {
             type: "geojson",
@@ -9888,35 +10087,128 @@
           paint: {
             "line-color": [
               "case",
+              ["==", ["get", "id"], 1],
+              "#a9002a",
+              ["==", ["get", "id"], 2],
+              "#60df76",
+              ["==", ["get", "id"], 3],
+              "#b50ea0",
+              ["==", ["get", "id"], 4],
+              "#259e0d",
+              ["==", ["get", "id"], 5],
+              "#d35fe4",
+              ["==", ["get", "id"], 6],
+              "#7ebb0f",
+              ["==", ["get", "id"], 7],
+              "#3742c0",
+              ["==", ["get", "id"], 8],
+              "#b9ce1c",
+              ["==", ["get", "id"], 9],
+              "#8a72fe",
+              ["==", ["get", "id"], 10],
+              "#1c7300",
+              ["==", ["get", "id"], 11],
+              "#f761df",
+              ["==", ["get", "id"], 12],
+              "#205f15",
+              ["==", ["get", "id"], 13],
+              "#c685ff",
+              ["==", ["get", "id"], 14],
+              "#828400",
+              ["==", ["get", "id"], 15],
+              "#0178f2",
+              ["==", ["get", "id"], 16],
+              "#f8761e",
+              ["==", ["get", "id"], 17],
+              "#02a7fd",
+              ["==", ["get", "id"], 18],
+              "#c69000",
+              ["==", ["get", "id"], 19],
+              "#72349e",
+              ["==", ["get", "id"], 20],
+              "#b7d165",
+              ["==", ["get", "id"], 21],
+              "#294ea3",
+              ["==", ["get", "id"], 22],
+              "#ff9d4f",
+              ["==", ["get", "id"], 23],
+              "#007dce",
+              ["==", ["get", "id"], 24],
+              "#e93139",
+              ["==", ["get", "id"], 25],
+              "#7bda97",
+              ["==", ["get", "id"], 26],
+              "#e00072",
+              ["==", ["get", "id"], 27],
+              "#019b85",
+              ["==", ["get", "id"], 28],
+              "#ff94fd",
+              ["==", ["get", "id"], 29],
+              "#617100",
+              ["==", ["get", "id"], 30],
+              "#d0a4ff",
               ["==", ["get", "id"], 31],
-              "#00ffff",
+              "#b16900",
               ["==", ["get", "id"], 32],
-              "#ff00ff",
+              "#9bb2ff",
               ["==", ["get", "id"], 33],
-              "#0000ff",
+              "#aa4c00",
               ["==", ["get", "id"], 34],
-              "#ffff00",
+              "#0072a3",
               ["==", ["get", "id"], 35],
-              "#00ff00",
-              "#ea0a8e"
+              "#ff8465",
+              ["==", ["get", "id"], 36],
+              "#019ca1",
+              ["==", ["get", "id"], 37],
+              "#ff6bad",
+              ["==", ["get", "id"], 38],
+              "#abd28b",
+              ["==", ["get", "id"], 39],
+              "#6e3e8b",
+              ["==", ["get", "id"], 40],
+              "#e7c16b",
+              ["==", ["get", "id"], 41],
+              "#5d497e",
+              ["==", ["get", "id"], 42],
+              "#dbc489",
+              ["==", ["get", "id"], 43],
+              "#9e1753",
+              ["==", ["get", "id"], 44],
+              "#8ca26d",
+              ["==", ["get", "id"], 45],
+              "#ff8edd",
+              ["==", ["get", "id"], 46],
+              "#5e5700",
+              ["==", ["get", "id"], 47],
+              "#e9b6e4",
+              ["==", ["get", "id"], 48],
+              "#704b15",
+              ["==", ["get", "id"], 49],
+              "#ff7da2",
+              ["==", ["get", "id"], 50],
+              "#a68959",
+              ["==", ["get", "id"], 51],
+              "#936995",
+              ["==", ["get", "id"], 52],
+              "#ffa477",
+              ["==", ["get", "id"], 53],
+              "#853d37",
+              "#873d19"
             ],
             "line-width": 1
           }
         });
 
+        // Layer koji obreze voronoi polygone[maska]
         map.addLayer({
-          id: "mjau",
+          id: "maskLayer",
           type: "fill",
           source: {
             type: "geojson",
             data: masked
           },
           layout: {},
-          paint: {
-            "fill-opacity": 0.3,
-            "fill-outline-color": "#999B9E",
-            "fill-color": "#ea0a8e"
-          }
+          paint: {}
         });
       });
     </script>
