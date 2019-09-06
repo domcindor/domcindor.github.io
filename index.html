@@ -190,7 +190,10 @@
           },
           layout: {},
           paint: {
-            "circle-radius": 2,
+            "circle-radius": {
+              'base': 1.75,
+              'stops': [[12, 2], [22, 180]]
+              },
             // Takoder boja unique cluster ali uzima featurese iz points-a, a ne iz voroniPolygona.
             "circle-color": [
               "case",
@@ -301,7 +304,8 @@
               ["==", ["get", "Cluster"], 53],
               "#853d37",
               "#873d19"
-            ]
+            ],
+            "circle-opacity": 0.6
           }
         });
 
